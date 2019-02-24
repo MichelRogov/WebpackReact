@@ -8,7 +8,7 @@ class FormContainer extends Component {
 
         this.state = {
             seo_title: "SEO Title",
-            students: [{name:''}]
+            students: []
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -44,7 +44,7 @@ class FormContainer extends Component {
                     />
             </form>
                 <button onClick={this.handleClick} type="submit">Get Students</button>
-                <ul style={listItems[0].key ? {} : { display: 'none' }}>{listItems}</ul>
+                <ul style={listItems.length ? {} : { display: 'none' }}>{listItems}</ul>
             </div>
     )}
 }
